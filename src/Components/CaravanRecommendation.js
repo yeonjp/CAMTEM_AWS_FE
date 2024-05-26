@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import defaultImage from "../images/image44.png";
-import { useNavigate } from "react-router-dom";
 
 function CaravanRecommendation({ campingData, onNavigate }) {
 
