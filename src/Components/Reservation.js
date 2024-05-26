@@ -110,8 +110,8 @@ function SearchBar() {
       const requestData = { region: regionInEnglish, dates, numPeople };
 
       const [weatherResponse, campResponse] = await Promise.all([
-        axios.post("/api/recommend-campsite", requestData),
-        axios.get(`/api/productlist?city=${cityName}`),
+        axios.post("http://43.200.58.120:8080/api/recommend-campsite", requestData),
+        axios.get(`http://43.200.58.120:8080/api/productlist?city=${cityName}`),
       ]);
 
       dispatch(changeWeatherData(weatherResponse.data.list));

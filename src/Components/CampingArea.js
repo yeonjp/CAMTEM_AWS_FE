@@ -15,7 +15,7 @@ function CampingArea(props) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`/camping?city=${props.location}`);
+        const response = await axios.get(`http://43.200.58.120:8080/camping?city=${props.location}`);
         setResponseData(response.data);
       } catch (error) {
         console.error(error);

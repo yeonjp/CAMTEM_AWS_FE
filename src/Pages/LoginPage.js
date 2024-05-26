@@ -12,7 +12,7 @@ function LoginPage() {
   const handleKakaoLogin = (event) => {
     event.preventDefault(); // 기본 동작(폼 제출) 막기
     const KakaoLoginUrl =
-      "https://kauth.kakao.com/oauth/authorize?client_id=62342a0268dc6bfdf0a67b0d5b7c6cb7&redirect_uri=http://localhost:3000/oauth2/kakao&response_type=code&prompt=login";
+      "https://kauth.kakao.com/oauth/authorize?client_id=62342a0268dc6bfdf0a67b0d5b7c6cb7&redirect_uri=http://camtem-aws-fe.s3-website.ap-northeast-2.amazonaws.com/oauth2/kakao&response_type=code&prompt=login";
     window.location.href = KakaoLoginUrl;
   };
 

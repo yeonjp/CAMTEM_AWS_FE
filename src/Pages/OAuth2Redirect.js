@@ -13,7 +13,7 @@ function OAuth2Redirect() {
     console.log(code);
     if (code) {
       axios
-        .get(`http://localhost:8080/api/oauth/kakao?code=${code}`)
+        .get(`http://43.200.58.120/api/oauth/kakao?code=${code}`)
         .then((response) => {
           // 백엔드로부터 응답을 받은 후 처리할 로직
           console.log(response);
