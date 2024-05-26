@@ -11,7 +11,6 @@ import "../css/MainPage.css";
 
 function MainPage() {
   const [location, setLocation] = useState("서울");
-  const today = new Date();
 
   const scrollToDateSection = () => {
     const dateSection = document.getElementById("date-section");

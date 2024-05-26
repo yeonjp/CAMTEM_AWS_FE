@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from "react-router-dom";
 import defaultImage from "../images/image44.png";
 
 function Camping({ camping, onNavigate ,showAddress }) {
-
-  const buttonContainerStyle = {
-    position: 'relative', // 부모 요소를 상대적으로 위치시킴
-  };
 
   const buttonStyle = {
     backgroundColor: 'darkcyan', // 버튼 배경색
@@ -48,7 +43,7 @@ function Camping({ camping, onNavigate ,showAddress }) {
   return (
     <div className="캠핑장 목록">
       <div className="list" style={{ position: 'relative' }}>
-        <img src={camping.firstImageUrl ? camping.firstImageUrl : defaultImage} style={{ width: "50%" }} />
+        <img src={camping.firstImageUrl ? camping.firstImageUrl : defaultImage} style={{ width: "50%" }} alt="This is firstImageUrl" />
         <div className="infomation">
           <h2>{camping.facltNm}</h2>
           <hr style={{ width: "80%" }} />

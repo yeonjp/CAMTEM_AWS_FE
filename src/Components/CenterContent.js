@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Container, Form } from "react-bootstrap";
 import Reservation from "../Components/Reservation";
 import "../css/CenterContent.css";

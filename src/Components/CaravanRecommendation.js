@@ -8,8 +8,6 @@ import defaultImage from "../images/image44.png";
 import { useNavigate } from "react-router-dom";
 
 function CaravanRecommendation({ campingData, onNavigate }) {
-  const navigate = useNavigate();
-
 
   // 커스텀 화살표 스타일링
   const CustomArrow = styled.div`
