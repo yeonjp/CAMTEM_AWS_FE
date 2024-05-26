@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import defaultImage from "../images/image44.png";
 
 function Camping({ camping, onNavigate ,showAddress }) {
-  let navigate = useNavigate();
 
   const buttonContainerStyle = {
     position: 'relative', // 부모 요소를 상대적으로 위치시킴

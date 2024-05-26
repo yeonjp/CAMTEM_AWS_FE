@@ -1,8 +1,8 @@
-import React, { useState, Component } from "react";
+import React, { useState } from "react";
 import "react-calendar/dist/Calendar.css";
 import "../CheckCalendar.css";
 import DatePicker from "react-datepicker";
-import { addDays, addMonths } from "date-fns";
+import { addMonths } from "date-fns";
 
 // https://reactdatepicker.com/ 에서 Date Range with disabled navigation shown을 사용했음.
 // CheckCalendar 함수 컴포넌트 정의

@@ -1,6 +1,5 @@
 import React from "react";
 import NaverLogin from "../Components/NaverLogin";
-import KakaoLogin from "../Components/KakaoLogin";
 import GoogleLogin from "../Components/GoogleLogin";
 import TopNav from "../Components/TopNav";
 import { Nav } from "react-bootstrap";

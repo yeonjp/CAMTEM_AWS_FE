@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import TopNav from "../Components/TopNav";
 import Footer from "../Components/Footer";
-import { Accordion, Carousel, Container, Image, Nav } from "react-bootstrap";
+import { Accordion, Carousel, Container, Nav } from "react-bootstrap";
 import item1 from "../images/item1.jpg";
 import item2 from "../images/image45.png";
 import item3 from "../images/image44.png";
@@ -29,8 +29,6 @@ import defaultImage from "../images/image44.png";
 
 function ProductDetail() {
   // useParams : api에 요청한 url에 접근해서 100109 id를 가져올 수 있다.
-  const { contentId } = useParams();
-  const [content, setContent] = useState({});
   const location = useLocation();
   const { camping } = location.state; // 여기서 전달받은 camping 데이터에 접근합니다.
 

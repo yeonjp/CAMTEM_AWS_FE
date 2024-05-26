@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import TopNav from '../Components/TopNav';
 import { useNavigate } from 'react-router-dom';
-import { Nav } from 'react-bootstrap';
 import Footer from '../Components/Footer';
 
 function RegisterPage() {
   const [displayName, setDisplayName] = useState('');
   const [userId, setUserId] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate();
 
   const containerStyle = {
     display: 'flex',

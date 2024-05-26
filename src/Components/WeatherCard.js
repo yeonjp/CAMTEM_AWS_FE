@@ -11,18 +11,6 @@ function WeatherCard({ weather }) {
     return date.toLocaleDateString("ko-KR"); // 'ko-KR' 로케일을 사용하여 날짜를 포맷합니다.
   };
 
-  // 날씨 상태를 한국어 설명으로 변환하는 함수
-  const translateWeatherCondition = (condition) => {
-    const conditions = {
-      Rain: "비",
-      Clouds: "구름 많음",
-      Clear: "맑음",
-      Snow: "눈옴",
-      // 추가적인 날씨 상태를 여기에 매핑할 수 있습니다.
-    };
-    return conditions[condition] || condition; // 매핑된 값이 없으면 원래 상태를 반환
-  };
-
   // 날씨 상태에 따른 아이콘 컴포넌트 매핑
   const weatherIcons = {
     Rain: <TiWeatherDownpour size="80" />,

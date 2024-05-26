@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Dropdown, Form } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
 
 function SearchInput() {
   const [location, setLocation] = useState("");

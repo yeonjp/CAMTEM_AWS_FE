@@ -4,11 +4,6 @@ import Reservation from "../Components/Reservation";
 import "../css/CenterContent.css";
 
 function CenterContent() {
-  const [kk, setKk] = useState(null);
-  useEffect(() => {
-    //kk가 업데이트되면 이 코드가 실행
-  }, [kk]);
-
   return (
     <Container fluid className="bgContainer mt-5 p-3" >
       <Form>
